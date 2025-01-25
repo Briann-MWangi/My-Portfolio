@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <!-- Header Section -->
@@ -14,7 +15,7 @@
     <div class="container">
       <h1>Hi, I'm <span>Brian Mwangi</span></h1>
       <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-      <a href="#projects" class="cta">View My Work</a>
+      <a href="#projects" class="cta scroll-link">View My Work</a>
     </div>
   </header>
 
@@ -23,7 +24,7 @@
     <!-- About Me -->
     <section id="about" class="about">
       <div class="about-container">
-        <img src="profile.jpg" alt="Brian Mwangi" class="profile-pic">
+        <img src="profile.jpeg" alt="Brian Mwangi" class="profile-pic">
         <div class="about-text">
           <h2>About Me</h2>
           <p>My name is <strong>Brian Mwangi</strong>, a passionate Backend Developer, cryptography enthusiast, and BBIT student.</p>
@@ -31,7 +32,7 @@
           <h3>Skills:</h3>
           <ul class="skills">
             <li>Python</li>
-            <li>Node.js</li>
+            <li>Javascript</li>
             <li>MySQL</li>
             <li>Cryptography</li>
             <li>RESTful APIs</li>
@@ -48,48 +49,63 @@
           <img src="ticket-generator.jpg" alt="Event-Ticket Generator">
           <h3>Event-Ticket Generator</h3>
           <p>A system for generating unique event tickets with QR codes for easy validation.</p>
+          <a href="https://github.com/Briann-MWangi/Event-Ticket-generator" target="_blank" class="project-link">view on Github</a>
         </div>
         <div class="card">
           <img src="banking-system.jpg" alt="Simple Banking System">
           <h3>Simple Banking System</h3>
           <p>A lightweight banking platform with account management and transaction tracking.</p>
+          <a href="https://github.com/Briann-MWangi/banking-manager" target="_blank" class="project-link">view on Github</a>
         </div>
         <div class="card">
           <img src="send-it.jpg" alt="SEND-IT">
           <h3>SEND-IT</h3>
           <p>A delivery service app that manages package logistics with user-friendly features.</p>
+          <a href="https://github.com/Briann-MWangi/SEND-IT" target="_blank" class="project-link">view on Github</a>
         </div>
         <div class="card">
           <img src="food-mart.jpg" alt="Food Mart App">
           <h3>Food Mart App</h3>
           <p>An e-commerce app for ordering fresh groceries and meals directly to your doorstep.</p>
+          <a href="https://github.com/Briann-MWangi/Food-mart" target="_blank" class="project-link">view on Github</a>
         </div>
       </div>
     </section>
   
-    <!-- Contact Me -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-container">
-        <form action="#" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <div class="social-links">
-          <p>Connect with me:</p>
-          <a href="https://instagram.com/_6.r.i_" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:brian.mwanginjeri2@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="tel:0723224334"><i class="fas fa-phone"></i></a>
-        </div>
-      </div>
-    </section>
+   <!-- Contact Me -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <form id="contact-form" class="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p id="form-response" style="display: none;"></p>
+    <div class="social-links">
+      <p>Connect with me:</p>
+      <a href="https://instagram.com/_6.r.i_" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="mailto:brian.mwanginjeri2@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="tel:0723224334">
+        <i class="fas fa-phone"></i> Phone
+      </a>
+    </div>
+  </div>
+</section>
+
+    
   </main>
   
-
   <footer>
     <p>&copy; 2025 Brian Mwangi. All rights reserved.</p>
   </footer>
+
+  <!-- Link to the External JavaScript File -->
+  <script src="index.js"></script>
 </body>
 </html>
